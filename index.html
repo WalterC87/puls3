@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="utf-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-	<meta description="Mini proyecto derivado del curso de MejorFront"/>
-	<meta name="viewport" content="width=device-width"/>
-	<link  href="css/estilos.css" rel="stylesheet"/>
-		
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="vendors/modernizer.js"></script>
-	<title>PicPuls3|Comunidad de fotografías locas</title>	
-</head>
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta description="Mini proyecto derivado del curso de MejorFront"/>
+		<meta name="viewport" content="width=device-width"/>
+
+		<link  href="css/estilos.css" rel="stylesheet"/>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="vendors/modernizer.js"></script>
+		<title>PicPuls3|Comunidad de fotografías locas</title>	
+	</head>
 	
-<body>
-	<header>
-		<figure>
-			<img src="img/logopulse3.png" alt="" title="PicPuls3"/>	
-		</figure>
+	<body>
+		<header>
 
-		<div id="titulo">
-			<h1>PicPuls3 | <small>Página de fotografías locas</small></h1>
-			
-			<nav>
-				<a href="#">Home</a>				
-			</nav>
-		</div>
+			<figure id="logo">
+				<img src="img/logo-picpuls3.fw.png" alt="" title="PicPuls3"/>	
+			</figure>
 
-		<figure id="avatar">
-			<a href="#">
-				<img src="img/avatar.png" alt="avatar" title="avatar">
-				Avatar
-			</a>
-		</figure>
-	</header>
-	<section>
-			
-	</section>
+			<div id="titulo">
+				<h1>PicPuls3</h1> 
 
-	<footer>
+				<h2>comparte tus mejores fotografías con tus amigos y el resto del mundo</h2>
+
+				<nav>
+					<a href="#"><img src="img/ico_home-bk.fw.png" alt="" title="" onmouseover="cambioImagen(this)" onmouseout="regresaImagen(this)"></a>				
+				</nav>
+
+			</div>
+
+			<figure id="avatar">
+				<a href="#">
+					<img src="img/avatar2.png" alt="avatar" title="avatar">					
+				</a>
+			</figure>
+
+		</header>
+
+		<section>
 			
-	</footer>
-</body>
+		</section>
+
+		<footer>
+			
+		</footer>
+
+		<<script type="text/javascript">
+			
+			function cambioImagen(el){
+				var img = $(el);
+				img.attr("src","img/ico_home-color.fw.png");
+			}
+
+			function regresaImagen(el){
+				var img = $(el);
+				img.attr("src","img/ico_home-bk.fw.png");
+			}
+
+		</script>
+	</body>
 </html>
+
