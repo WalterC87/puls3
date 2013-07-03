@@ -1,0 +1,97 @@
+body
+	background-color #dbd5bf
+	color #000060
+
+
+header
+	background-color #BEA780
+	font-family Arial,sans-serif
+	margin 0
+	padding 0
+	position fixed
+	width:100%
+
+	img
+		width 100%
+
+
+	h1
+		color #FF4000
+		text-shadow 1px 1px #d9d900
+		font-size 50px
+		font-weight 600
+		line-height 0
+
+
+	 h2
+		font-size 15px
+		text-shadow 1px 1px #333
+		color #eaeaea
+
+
+	#avatar, #logo, #titulo
+		display inline-block
+		margin 0
+		padding 0
+		vertical-align top
+
+
+	#avatar
+		margin-top 1em
+		img
+			-webkit-border-radius 40px
+			-moz-border-radius 40px
+			border-radius 40px
+			width 75px
+	
+	#logo
+		margin-top 1em
+		width 100px
+
+	#titulo
+		vertical-align middle
+		margin-top 1em
+		padding 0
+		text-align center
+		width 55%
+
+		nav
+			float left 
+
+		a
+			color #eaeaea
+			text-decoration none
+
+		a:hover:after
+			content 'Inicio'
+
+		img
+			width 32px
+
+@media screen and (min-width: 600px)
+
+	header 
+
+		#logo
+			margin-left 70px
+
+		#titulo
+			width 65%
+
+@media screen and (max-width: 650px)
+
+	header
+		#titulo
+			width 60%
+
+
+@media screen and( max-width:460px)
+	h2
+		display none
+
+	#avatar
+		width 50px
+
+
+
+
